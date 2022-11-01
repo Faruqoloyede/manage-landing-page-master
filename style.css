@@ -1,0 +1,120 @@
+:root {
+    --Red: hsl(12, 88%, 59%);
+    --Blue: hsl(228, 39%, 23%);
+    --Dark: hsl(227, 12%, 61%);
+    --Very: hsl(233, 12%, 13%);
+    --Pale: hsl(13, 100%, 96%);
+    --Gray: hsl(0, 0%, 98%);
+}
+* {
+    list-style-type: none;
+}
+
+body {
+    background: url(./img/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: 90% -25%;
+}
+img {
+    width: 100%;
+}
+.flex img {
+    width: 50%;
+}
+.card {
+    border: none;
+}
+.card img {
+    width: 30%;
+    margin-bottom: 1rem;
+}
+.btn {
+    background-color: var(--Red);
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px var(--Red);
+}
+.number {
+    border-radius: 15px;
+    background-color: var(--Red);
+}
+.newsletter {
+    background: url('./img/bg-simplify-section-desktop.svg');
+    background-repeat: no-repeat;
+    background-color: var(--Red);
+}
+.button {
+    background-color: var(--Gray);
+    text-decoration: none;
+    color: var(--Red);
+    border-radius: 15px;
+}
+.footer {
+    background-color: var(--Blue);
+}
+.footer .logo {
+    width: 50%;
+    filter: invert(5);
+    margin-bottom: 5rem;
+}
+.social a img {
+    width: 10%;
+    padding: 5px;
+}
+input {
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.pra {
+    color: var(--Dark);
+}
+.link ul li{
+    margin-bottom: 0.5rem;
+}
+.bx{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url('./img/icon-close.svg');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    cursor: pointer;
+}
+.bx.bx-menu{
+    background: url('./img/icon-hamburger.svg');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
+    
+}
+
+@media (max-width:768px) {
+    .flex {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .flex img {
+        width: 100%;
+    }
+    .flex .text {
+        font-size: 40px;
+    }
+    .flex p {
+        font-size: 18px;
+    }
+    .tex {
+        font-size: 20px;
+        background-color: var(--Pale);
+    }
+    .newsletter {
+        background: url('./img/bg-simplify-section-mobile.svg');
+        background-repeat: no-repeat;
+        background-color: var(--Red);
+    }
+   
+}
